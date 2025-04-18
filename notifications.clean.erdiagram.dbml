@@ -1,0 +1,30 @@
+Table Notifications {
+  notification_id int [pk]
+  title varchar
+  body text
+  type_id int
+  sender_id int
+  send_method enum('In-System', 'SMS', 'Email')
+  send_date datetime
+  priority enum('High', 'Medium', 'Low')
+}
+
+Table Notification_Types {
+  type_id int [pk]
+  name varchar
+}
+
+Table Notification_Targets {
+  target_id int [pk]
+  notification_id int
+  user_id int
+  user_type enum('student', 'parent', 'staff')
+}
+
+Table Read_Status {
+  status_id int [pk]
+  target_id int
+  is_read boolean
+  read_at datetime
+  acknowledged boolean
+}
