@@ -1,9 +1,126 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Safari/605.1.15" version="26.2.13">
   <diagram name="Page-1" id="fzgkzmdGJ8bUWncaGvvt">
-    <mxGraphModel>
+    <mxGraphModel dx="2059" dy="801" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-1" value="Table Support_Tickets {" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-493" y="42" width="245" height="312" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-2" value="  ticket_id int [pk]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-1">
+          <mxGeometry y="26" width="245" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-3" value="  submitted_by int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-1">
+          <mxGeometry y="52" width="245" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-4" value="  user_type enum(&#39;student&#39;, &#39;staff&#39;, &#39;admin&#39;)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-1">
+          <mxGeometry y="78" width="245" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-5" value="  category_id int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-1">
+          <mxGeometry y="104" width="245" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-6" value="  title varchar" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-1">
+          <mxGeometry y="130" width="245" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-7" value="  description text" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-1">
+          <mxGeometry y="156" width="245" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-8" value="  status enum(&#39;New&#39;, &#39;In Progress&#39;, &#39;Closed&#39;)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-1">
+          <mxGeometry y="182" width="245" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-9" value="  assigned_to int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-1">
+          <mxGeometry y="208" width="245" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-10" value="  submit_date datetime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-1">
+          <mxGeometry y="234" width="245" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-11" value="  close_date datetime [null]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-1">
+          <mxGeometry y="260" width="245" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-12" value="}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-1">
+          <mxGeometry y="286" width="245" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-13" value="Table Support_Categories {" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-282" y="42" width="191" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-14" value="  category_id int [pk]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-13">
+          <mxGeometry y="26" width="191" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-15" value="  name varchar" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-13">
+          <mxGeometry y="52" width="191" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-16" value="}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-13">
+          <mxGeometry y="78" width="191" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-17" value="Table Ticket_Replies {" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-51" y="42" width="252" height="208" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-18" value="  reply_id int [pk]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-17">
+          <mxGeometry y="26" width="252" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-19" value="  ticket_id int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-17">
+          <mxGeometry y="52" width="252" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-20" value="  sender_id int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-17">
+          <mxGeometry y="78" width="252" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-21" value="  sender_type enum(&#39;staff&#39;, &#39;admin&#39;, &#39;support&#39;)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-17">
+          <mxGeometry y="104" width="252" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-22" value="  reply_text text" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-17">
+          <mxGeometry y="130" width="252" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-23" value="  reply_date datetime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-17">
+          <mxGeometry y="156" width="252" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-24" value="}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-17">
+          <mxGeometry y="182" width="252" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-25" value="Table Ticket_Attachments {" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="152" y="42" width="278" height="182" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-26" value="  attachment_id int [pk]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-25">
+          <mxGeometry y="26" width="278" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-27" value="  ticket_id int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-25">
+          <mxGeometry y="52" width="278" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-28" value="  uploaded_by int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-25">
+          <mxGeometry y="78" width="278" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-29" value="  file_path varchar" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-25">
+          <mxGeometry y="104" width="278" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-30" value="  file_extension enum(&#39;PDF&#39;, &#39;PNG&#39;, &#39;DOCX&#39;, &#39;ZIP&#39;)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-25">
+          <mxGeometry y="130" width="278" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-31" value="}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-25">
+          <mxGeometry y="156" width="278" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-32" value="Table Support_Status_Logs {" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="381" y="42" width="274" height="208" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-33" value="  log_id int [pk]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-32">
+          <mxGeometry y="26" width="274" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-34" value="  ticket_id int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-32">
+          <mxGeometry y="52" width="274" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-35" value="  changed_by int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-32">
+          <mxGeometry y="78" width="274" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-36" value="  old_status enum(&#39;New&#39;, &#39;In Progress&#39;, &#39;Closed&#39;)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-32">
+          <mxGeometry y="104" width="274" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-37" value="  new_status enum(&#39;New&#39;, &#39;In Progress&#39;, &#39;Closed&#39;)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-32">
+          <mxGeometry y="130" width="274" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-38" value="  change_date datetime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-32">
+          <mxGeometry y="156" width="274" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NK0pI7VJ2Qbnk2Hgko0p-39" value="}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="NK0pI7VJ2Qbnk2Hgko0p-32">
+          <mxGeometry y="182" width="274" height="26" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
