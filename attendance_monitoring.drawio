@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Safari/605.1.15" version="26.2.13">
+  <diagram name="Page-1" id="LrqSTvpExJwse5NzD7ib">
+    <mxGraphModel dx="1628" dy="801" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4Q2qiBS80WHTQVR9OkWI-2" value="Table Attendance_Records {" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-130" y="222" width="225" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="4Q2qiBS80WHTQVR9OkWI-3" value="  record_id int [pk]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="4Q2qiBS80WHTQVR9OkWI-2">
+          <mxGeometry y="26" width="225" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="4Q2qiBS80WHTQVR9OkWI-4" value="  student_id int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="4Q2qiBS80WHTQVR9OkWI-2">
+          <mxGeometry y="52" width="225" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="4Q2qiBS80WHTQVR9OkWI-5" value="  class_id int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="4Q2qiBS80WHTQVR9OkWI-2">
+          <mxGeometry y="78" width="225" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="4Q2qiBS80WHTQVR9OkWI-6" value="  date date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="4Q2qiBS80WHTQVR9OkWI-2">
+          <mxGeometry y="104" width="225" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="4Q2qiBS80WHTQVR9OkWI-7" value="  status enum(&#39;Present&#39;, &#39;Absent&#39;, &#39;Late&#39;)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="4Q2qiBS80WHTQVR9OkWI-2">
+          <mxGeometry y="130" width="225" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="4Q2qiBS80WHTQVR9OkWI-8" value="  reason_id int [null]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="4Q2qiBS80WHTQVR9OkWI-2">
+          <mxGeometry y="156" width="225" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="4Q2qiBS80WHTQVR9OkWI-9" value="  recorded_by int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="4Q2qiBS80WHTQVR9OkWI-2">
+          <mxGeometry y="182" width="225" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="4Q2qiBS80WHTQVR9OkWI-10" value="  notes text" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="4Q2qiBS80WHTQVR9OkWI-2">
+          <mxGeometry y="208" width="225" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="4Q2qiBS80WHTQVR9OkWI-11" value="}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="4Q2qiBS80WHTQVR9OkWI-2">
+          <mxGeometry y="234" width="225" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="4Q2qiBS80WHTQVR9OkWI-12" value="Table Absence_Reasons {" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="106" y="222" width="185" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="4Q2qiBS80WHTQVR9OkWI-13" value="  reason_id int [pk]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="4Q2qiBS80WHTQVR9OkWI-12">
+          <mxGeometry y="26" width="185" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="4Q2qiBS80WHTQVR9OkWI-14" value="  reason_text varchar" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="4Q2qiBS80WHTQVR9OkWI-12">
+          <mxGeometry y="52" width="185" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="4Q2qiBS80WHTQVR9OkWI-15" value="}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="4Q2qiBS80WHTQVR9OkWI-12">
+          <mxGeometry y="78" width="185" height="26" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
