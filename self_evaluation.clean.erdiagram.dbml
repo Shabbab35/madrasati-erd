@@ -1,0 +1,55 @@
+Table Evaluation_Teams {
+  team_id int [pk]
+  school_id int
+  created_by int
+  date_formed date
+}
+
+Table Team_Meetings {
+  meeting_id int [pk]
+  team_id int
+  meeting_date date
+  moderator_id int
+  summary text
+}
+
+Table Evaluation_Domains {
+  domain_id int [pk]
+  name varchar
+}
+
+Table Evaluation_Indicators {
+  indicator_id int [pk]
+  domain_id int
+  description text
+  weight decimal(5,2)
+}
+
+Table Uploaded_Evidences {
+  evidence_id int [pk]
+  indicator_id int
+  uploaded_by int
+  file_path varchar
+  file_type enum('Plan', 'Report', 'Image', 'Document')
+  file_extension enum('PDF', 'DOCX', 'JPG', 'PNG')
+  upload_date date
+}
+
+Table Evaluation_Results {
+  result_id int [pk]
+  indicator_id int
+  score decimal(4,2)
+  rated_by int
+  date_rated date
+  notes text
+}
+
+Table Improvement_Plans {
+  plan_id int [pk]
+  indicator_id int
+  description text
+  start_date date
+  end_date date
+  assigned_to int
+  status enum('In Progress', 'Completed', 'Archived')
+}
