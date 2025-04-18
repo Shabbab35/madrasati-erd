@@ -1,0 +1,33 @@
+Table Behavior_Violations {
+  violation_id int [pk]
+  student_id int
+  type_id int
+  date_reported date
+  reported_by int
+  referred_to int
+  approved_by int
+  escalated_to int
+  action_taken_id int
+  status enum('Pending', 'Approved', 'Followed Up', 'Closed')
+  description text
+}
+
+Table Behavior_Actions {
+  action_id int [pk]
+  name varchar
+}
+
+Table Behavior_Plans {
+  plan_id int [pk]
+  violation_id int
+  created_by int
+  start_date date
+  end_date date
+  goals text
+  follow_up_notes text
+}
+
+Table Violation_Types {
+  type_id int [pk]
+  name varchar
+}
