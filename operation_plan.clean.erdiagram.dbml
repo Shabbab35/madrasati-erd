@@ -1,0 +1,42 @@
+Table Operation_Plan_Programs {
+  program_id int [pk]
+  title varchar
+  goal text
+  category enum('Leadership', 'Environment', 'Learning Outcomes', 'Other')
+  start_date date
+  end_date date
+  created_by int
+  status enum('Active', 'In Progress', 'Completed', 'Archived')
+}
+
+Table Assigned_Staff {
+  assignment_id int [pk]
+  program_id int
+  staff_id int
+  role enum('Executor', 'Monitor', 'Committee Member')
+}
+
+Table Implementation_Reports {
+  report_id int [pk]
+  program_id int
+  phase_id int
+  submitted_by int
+  submission_date date
+  summary text
+  completion_rate decimal(5,2)
+}
+
+Table Program_Files {
+  file_id int [pk]
+  program_id int
+  uploaded_by int
+  file_path varchar
+  file_type varchar
+  file_extension enum('PDF', 'DOCX', 'PPTX', 'JPG', 'PNG')
+  linked_to_report_id int [null]
+}
+
+Table Execution_Phases {
+  phase_id int [pk]
+  name enum('Initial', 'Final')
+}
