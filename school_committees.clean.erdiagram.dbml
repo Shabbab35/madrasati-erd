@@ -1,0 +1,54 @@
+Table School_Committees {
+  committee_id int [pk]
+  name varchar
+  purpose text
+  created_by int
+  date_created date
+  status enum('Active', 'Temporary', 'Archived')
+}
+
+Table Committee_Members {
+  member_id int [pk]
+  committee_id int
+  staff_id int
+  role enum('President', 'Secretary', 'Member')
+  date_joined date
+}
+
+Table Committee_Meetings {
+  meeting_id int [pk]
+  committee_id int
+  meeting_date date
+  location varchar
+  called_by int
+  status enum('Scheduled', 'Held', 'Postponed')
+}
+
+Table Meeting_Minutes {
+  minute_id int [pk]
+  meeting_id int
+  moderator_id int
+  summary text
+  file_path varchar
+  file_extension enum('PDF', 'DOCX', 'JPG', 'PNG')
+}
+
+Table Committee_Recommendations {
+  recommendation_id int [pk]
+  meeting_id int
+  description text
+  assigned_to int
+  deadline date
+  status enum('Proposed', 'Approved', 'Implemented', 'Rejected')
+  linked_to_program_id int
+  linked_to_student_id int
+  linked_to_behavior_id int
+}
+
+Table Recommendation_Followup {
+  followup_id int [pk]
+  recommendation_id int
+  staff_id int
+  notes text
+  followup_date date
+}
