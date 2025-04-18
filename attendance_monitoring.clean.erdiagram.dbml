@@ -1,0 +1,15 @@
+Table Attendance_Records {
+  record_id int [pk]
+  student_id int
+  class_id int
+  date date
+  status enum('Present', 'Absent', 'Late')
+  reason_id int [null]
+  recorded_by int
+  notes text
+}
+
+Table Absence_Reasons {
+  reason_id int [pk]
+  reason_text varchar
+}
