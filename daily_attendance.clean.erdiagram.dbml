@@ -1,0 +1,36 @@
+Table Daily_Attendance_Records {
+  record_id int [pk]
+  student_id int
+  date date
+  status_type_id int
+  recorded_by int
+  class_id int
+  excuse_id int [null]
+  notes text
+}
+
+Table Attendance_Status_Types {
+  status_type_id int [pk]
+  name enum('Present', 'Absent', 'Late', 'Withdrawn')
+  requires_excuse boolean
+}
+
+Table Attendance_Excuses {
+  excuse_id int [pk]
+  student_id int
+  date_submitted date
+  submitted_by int
+  reason text
+  status enum('Pending', 'Accepted', 'Rejected')
+  supporting_file_path varchar
+  file_extension enum('PDF', 'DOCX', 'JPG', 'PNG')
+}
+
+Table Notification_Logs {
+  notification_id int [pk]
+  student_id int
+  date_sent date
+  message_type enum('Absence', 'Late', 'Excuse Rejected')
+  sent_to varchar
+  status enum('Sent', 'Failed')
+}
