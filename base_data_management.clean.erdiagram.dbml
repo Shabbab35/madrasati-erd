@@ -1,0 +1,58 @@
+Table Students {
+  student_id int [pk]
+  national_id varchar
+  full_name varchar
+  gender enum('Male', 'Female')
+  nationality varchar
+  class_id int
+  stage_id int
+  status enum('Active', 'Withdrawn', 'Suspended')
+}
+
+Table Staff {
+  staff_id int [pk]
+  national_id varchar
+  full_name varchar
+  job_title varchar
+  role_id int
+  assigned_class_id int [null]
+  status enum('Active', 'Inactive')
+}
+
+Table Classes {
+  class_id int [pk]
+  grade_id int
+  section_name varchar
+  stage_id int
+}
+
+Table Grades {
+  grade_id int [pk]
+  grade_name varchar
+  stage_id int
+}
+
+Table School_Stages {
+  stage_id int [pk]
+  stage_name varchar
+}
+
+Table Subjects {
+  subject_id int [pk]
+  name varchar
+  stage_id int
+}
+
+Table Roles {
+  role_id int [pk]
+  name varchar
+}
+
+Table User_Accounts {
+  user_id int [pk]
+  username varchar
+  password_hash varchar
+  linked_to_id int
+  linked_type enum('student', 'staff')
+  is_active boolean
+}
