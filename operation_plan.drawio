@@ -1,9 +1,123 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.3.1 Safari/605.1.15" version="26.2.13">
   <diagram name="Page-1" id="zE7cydD74sczeoQIIOVQ">
-    <mxGraphModel>
+    <mxGraphModel dx="2012" dy="890" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-1" value="Table Operation_Plan_Programs {" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-493" y="26" width="409" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-2" value="  program_id int [pk]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-1">
+          <mxGeometry y="26" width="409" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-3" value="  title varchar" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-1">
+          <mxGeometry y="52" width="409" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-4" value="  goal text" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-1">
+          <mxGeometry y="78" width="409" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-5" value="  category enum(&#39;Leadership&#39;, &#39;Environment&#39;, &#39;Learning Outcomes&#39;, &#39;Other&#39;)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-1">
+          <mxGeometry y="104" width="409" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-6" value="  start_date date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-1">
+          <mxGeometry y="130" width="409" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-7" value="  end_date date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-1">
+          <mxGeometry y="156" width="409" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-8" value="  created_by int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-1">
+          <mxGeometry y="182" width="409" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-9" value="  status enum(&#39;Active&#39;, &#39;In Progress&#39;, &#39;Completed&#39;, &#39;Archived&#39;)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-1">
+          <mxGeometry y="208" width="409" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-10" value="}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-1">
+          <mxGeometry y="234" width="409" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-11" value="Table Assigned_Staff {" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-227" y="26" width="303" height="156" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-12" value="  assignment_id int [pk]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-11">
+          <mxGeometry y="26" width="303" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-13" value="  program_id int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-11">
+          <mxGeometry y="52" width="303" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-14" value="  staff_id int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-11">
+          <mxGeometry y="78" width="303" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-15" value="  role enum(&#39;Executor&#39;, &#39;Monitor&#39;, &#39;Committee Member&#39;)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-11">
+          <mxGeometry y="104" width="303" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-16" value="}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-11">
+          <mxGeometry y="130" width="303" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-17" value="Table Implementation_Reports {" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="-22" y="26" width="215" height="234" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-18" value="  report_id int [pk]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-17">
+          <mxGeometry y="26" width="215" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-19" value="  program_id int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-17">
+          <mxGeometry y="52" width="215" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-20" value="  phase_id int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-17">
+          <mxGeometry y="78" width="215" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-21" value="  submitted_by int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-17">
+          <mxGeometry y="104" width="215" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-22" value="  submission_date date" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-17">
+          <mxGeometry y="130" width="215" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-23" value="  summary text" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-17">
+          <mxGeometry y="156" width="215" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-24" value="  completion_rate decimal(5,2)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-17">
+          <mxGeometry y="182" width="215" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-25" value="}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-17">
+          <mxGeometry y="208" width="215" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-26" value="Table Program_Files {" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="233" y="26" width="326" height="234" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-27" value="  file_id int [pk]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-26">
+          <mxGeometry y="26" width="326" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-28" value="  program_id int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-26">
+          <mxGeometry y="52" width="326" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-29" value="  uploaded_by int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-26">
+          <mxGeometry y="78" width="326" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-30" value="  file_path varchar" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-26">
+          <mxGeometry y="104" width="326" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-31" value="  file_type varchar" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-26">
+          <mxGeometry y="130" width="326" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-32" value="  file_extension enum(&#39;PDF&#39;, &#39;DOCX&#39;, &#39;PPTX&#39;, &#39;JPG&#39;, &#39;PNG&#39;)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-26">
+          <mxGeometry y="156" width="326" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-33" value="  linked_to_report_id int [null]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-26">
+          <mxGeometry y="182" width="326" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-34" value="}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-26">
+          <mxGeometry y="208" width="326" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-35" value="Table Execution_Phases {" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="435" y="26" width="184" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-36" value="  phase_id int [pk]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-35">
+          <mxGeometry y="26" width="184" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-37" value="  name enum(&#39;Initial&#39;, &#39;Final&#39;)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-35">
+          <mxGeometry y="52" width="184" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="1JJXl9KCSRvx3HLE40vn-38" value="}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1JJXl9KCSRvx3HLE40vn-35">
+          <mxGeometry y="78" width="184" height="26" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
