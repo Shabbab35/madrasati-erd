@@ -1,0 +1,44 @@
+Table Achievement_Categories {
+  category_id int [pk]
+  name varchar
+  target_role enum('staff', 'student', 'all')
+}
+
+Table Achievement_Files {
+  file_id int [pk]
+  uploader_id int
+  uploader_type enum('staff', 'student')
+  title varchar
+  description text
+  category_id int
+  upload_date date
+  file_path varchar
+  file_extension enum('PDF', 'DOCX', 'PPTX', 'JPG')
+  visibility enum('Private', 'School', 'Submitted')
+}
+
+Table Achievement_Evaluations {
+  evaluation_id int [pk]
+  file_id int
+  rated_by int
+  rating_score decimal(4,2)
+  rating_date date
+  notes text
+}
+
+Table Achievement_Comments {
+  comment_id int [pk]
+  file_id int
+  comment_by int
+  comment_text text
+  comment_date date
+}
+
+Table Achievement_Links {
+  link_id int [pk]
+  file_id int
+  linked_to_program_id int
+  linked_to_indicator_id int
+  linked_to_recommendation_id int
+  linked_to_student_id int
+}
